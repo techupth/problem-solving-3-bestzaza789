@@ -2,6 +2,10 @@
 
 const lengthOfLastWord = function (s) {
   //Start coding here
+  let words = s.split(" ");
+  words = words.filter((i) => i !== "");
+  let lastWord = words[words.length - 1];
+  return lastWord.length;
 };
 
 const result1 = lengthOfLastWord("Hello World");

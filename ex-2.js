@@ -2,6 +2,13 @@
 
 const singleNumber = function (nums) {
   // Start coding here
+  let result = 0;
+
+  for (const num of nums) {
+    result ^= num;
+  }
+
+  return result;
 };
 
 const result1 = singleNumber([2, 2, 1]);
